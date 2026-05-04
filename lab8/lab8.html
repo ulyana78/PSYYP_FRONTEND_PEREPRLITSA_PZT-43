@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛР8 — Микросетки</title>
+    <link rel="stylesheet" href="lab8.css">
+</head>
+<body>
+
+<div class="site-grid">
+
+    <!-- Шапка -->
+    <header class="site-header">
+        <div class="logo">МойСайт</div>
+        <nav>
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+        </nav>
+    </header>
+
+    <!-- Описание -->
+    <div class="content-block">
+        <h2>Лабораторная работа №8 — Микросетки</h2>
+        <p>
+            Ниже представлены две микросетки: форма «Экспресс‑заказ» и карточка товара.
+            Обе микросетки встроены в общую сетку <code>.microgrids-row</code>.
+        </p>
+    </div>
+
+    <!-- Две микросетки -->
+    <div class="microgrids-row">
+
+        <!-- === МИКРОСЕТКА №1 — Экспресс заказ === -->
+        <div class="order-card">
+
+            <div class="order-card__header">Экспресс заказ</div>
+
+            <form class="order-card__body">
+
+                <label>
+                    Ваше имя
+                    <input type="text">
+                </label>
+
+                <label>
+                    Ваш номер телефона
+                    <input type="tel">
+                </label>
+
+                <div class="order-card__row">
+                    <label>
+                        Размер
+                        <select>
+                            <option>XS</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option selected>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Доставка
+                        <select>
+                            <option>Курьер</option>
+                            <option selected>Самовывоз</option>
+                            <option>Почта</option>
+                        </select>
+                    </label>
+                </div>
+
+                <label class="order-card__full">
+                    Адрес доставки и дополнительная информация
+                    <textarea rows="3"></textarea>
+                </label>
+
+                <button class="order-card__btn">Заказать</button>
+
+            </form>
+        </div>
+
+        <!-- === МИКРОСЕТКА №2 — Карточка дивана === -->
+        <div class="sofa-card">
+
+            <img src="sofa.png" class="sofa-card__img" alt="Диван Mebelico Надежда 72 / 103095 (гостинка, серый)">
+
+            <div class="sofa-card__content">
+
+                <h3>Диван Mebelico Надежда 72 / 103095 (гостинка, серый)</h3>
+
+                <div class="sofa-card__price-row">
+                    <span class="sofa-card__price">671,00 р.</span>
+                    <span class="sofa-card__stars">★★★★★</span>
+                </div>
+
+                <ul class="sofa-card__list">
+                    <li><b>Длина:</b> 201 см</li>
+                    <li><b>Глубина:</b> 80 см</li>
+                    <li><b>Высота:</b> 88 см</li>
+                    <li><b>Обивка:</b> ткань</li>
+                    <li><b>Наполнитель:</b> пенополиуретан (25 кг/м³ + синтепон)</li>
+                    <li><b>Механизм трансформации:</b> книжка</li>
+                    <li><b>Ширина спального места:</b> 115 см</li>
+                    <li><b>Съёмный чехол:</b> нет</li>
+                </ul>
+
+                <div class="sofa-card__delivery">
+                    <span>Курьером — завтра</span>
+                    <span>Самовывоз — 15 марта</span>
+                </div>
+
+                <button class="sofa-card__btn">В корзину</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="site-footer">
+        ЛР №8 · Микросетки (CSS Grid)
+    </footer>
+
+</div>
+
+</body>
+</html>
