@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Операторы JS</title>
+    <script type="text/javascript">
+        function testOperators() {
+            var d = new Date();
+            var time = d.getHours();
+
+            if (time < 12) {
+                document.write("Доброе утро<br />");
+            } else {
+                document.write("Добрый день<br />");
+            }
+
+            var day = d.getDay();
+            switch (day) {
+                case 0:
+                    document.write("Воскресенье<br />");
+                    break;
+                case 6:
+                    document.write("Суббота<br />");
+                    break;
+                default:
+                    document.write("Будний день<br />");
+            }
+
+            for (var i = 1; i <= 5; i++) {
+                if (i == 2) {
+                    continue;
+                }
+                if (i == 4) {
+                    break;
+                }
+                document.write("Цикл for: " + i + "<br />");
+            }
+
+            var w = 0;
+            while (w < 3) {
+                document.write("Цикл while: " + w + "<br />");
+                w++;
+            }
+
+            var dw = 0;
+            do {
+                document.write("Цикл do...while: " + dw + "<br />");
+                dw++;
+            } while (dw < 1);
+        }
+
+        function multiply(a, b) {
+            return a * b;
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        testOperators();
+        var result = multiply(5, 4);
+        document.write("Результат функции return: " + result);
+    </script>
+</body>
+</html>

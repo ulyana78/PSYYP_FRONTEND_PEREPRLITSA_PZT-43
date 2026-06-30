@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Frond-End</title>
+    <style>
+        body { font-family: sans-serif; margin-top: 50px; }
+        a { display: block; margin: 8px; font-size: 20px; color: rgb(22, 99, 187); }
+        
+        /* Стили для фокуса и выпадающего списка */
+        .dropdown { position: relative; display: inline-block; }
+        
+        /* Прячем подменю по умолчанию */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 5px 15px;
+            z-index: 1;
+            border-radius: 5px;
+        }
+        
+        /* Показываем подменю при наведении мыши */
+        .dropdown:hover .dropdown-content { display: block; }
+        .dropdown-content a { font-size: 16px; margin: 8px 0; }
+    </style>
+</head>
+<body>
+    <h1>Сайты по практике</h1>
+    <a href="lab1-4/lr1.html">Лабораторные 1-4</a>
+    
+    <div class="dropdown">
+        <a href="#">Лабораторная 5</a>
+        <div class="dropdown-content">
+            <a href="lab5-8/lab5/fix/fix.html" target="_blank">Фиксированная</a>
+            <a href="lab5-8/lab5/fluid/fluid.html" target="_blank">Резиновая</a>
+            <a href="lab5-8/lab5/adapt/adapt.html" target="_blank">Адаптивная</a>
+            </div>
+    </div>
+    <br>
+    <div class="dropdown">
+        <a href="#">Лабораторная 6</a>
+        <div class="dropdown-content">
+            <a href="lab5-8/lab6/fix grid/fix_grid.html" target="_blank">Фиксированная</a>
+            <a href="lab5-8/lab6/fluid grid/fluid_grid.html" target="_blank">Резиновая</a>
+            <a href="lab5-8/lab6/adapt grid/adapt_grid.html" target="_blank">Адаптивная</a>
+            </div>
+    </div>
+
+    <a href="lab5-8/lab7/adapt/adapt.html">Лабораторная 7</a>
+  
+    <a href="lab5-8/lab8/lab8.html">Лабораторная 8</a>
+   
+    
+    <div class="dropdown">
+        <a href="#">Лабораторная 9</a>
+        <div class="dropdown-content">
+            <a href="lr9/1/z1.1.html" target="_blank">задание 1</a>
+            <a href="lr9/1/z1.2.html" target="_blank">задание 1.2</a>
+            <a href="lr9/1/z1.3.html" target="_blank">задание 1.3</a>
+            <a href="lr9/1/z1.4.html" target="_blank">задание 1.4</a>
+            <a href="lr9/z2.html" target="_blank">задание 2</a>
+            <a href="lr9/z3.html" target="_blank">задание 3</a>
+            </div>
+    </div>
+
+    <a href="lab10-12/lb10.html">Лабораторные 10-12</a>
+    <a href="PR1/build.html">Практическая работа №1</a>
+</body>
+</html>

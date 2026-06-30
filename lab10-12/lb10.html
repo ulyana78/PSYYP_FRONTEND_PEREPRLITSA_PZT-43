@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Вариант 51</title>
+    <script>
+       function showMonth() {
+            const date = new Date();
+            let monthNumber = date.getMonth() + 1; 
+            alert("Текущий месяц: " + monthNumber);
+        }
+    </script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+    <button onclick="showMonth()">Показать год</button><br>
+
+    <script>
+        let name = "Перепелица Ульяна"; 
+        let n = 12; 
+        let count = n + 5; 
+        let i = 1;
+        
+        do {
+            document.write(i + ". " + name + "<br>");
+            i++;
+        } while (i <= count);
+    </script>
+
+    <script>
+        // исходный массив из 6 целых элементов
+        let arr = [12, 5, 8, 23, 42, 17];
+        let initialArr = [...arr]; 
+        
+        // поиск суммы четных элементов
+        let sumEven = 0;
+        for(let num of arr) { 
+            if(num % 2 === 0) sumEven += num; 
+        }
+        
+        // сортировка элементов массива по убыванию
+        arr.sort(function(a, b) {
+            return b - a;
+        });
+
+        // Вывод результатов
+        document.write("<p>Исходный массив: " + initialArr.join(", ") + "<br>");
+        document.write("<p>Сумма четных элементов: " + sumEven + "<br>");
+        document.write("Измененный массив (по убыванию): " + arr.join(", ") + "</p>");
+    </script>
+
+    <div id="math-result"></div>
+
+    <script>
+        // Вызов внешней функции после загрузки страницы
+        window.onload = function() {
+            let x = 2; 
+            let y = 4; 
+            
+            let result = calculateMath(x, y);
+            document.getElementById('math-result').innerText = "Результат расчета z: " + result;
+        };
+    </script>
+
+    <script>
+        let s1 = "Я люблю Беларусь";
+        let s2 = "Я учусь в Политехническом колледже.";
+        
+        document.write("<p>Длина s1: " + s1.length + "<br>");
+        // удаление "учусь"
+        document.write("S2 без 'учусь': " + s2.replace("учусь ", "") + "<br>");
+        // замена всех букв "ю" 
+        document.write("S1 замена 'ю': " + s1.replaceAll("ю", "*") + "</p>");
+    </script>
+
+</body>
+</html>

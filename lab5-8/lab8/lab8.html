@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛР8 — Микросетки</title>
+    <link rel="stylesheet" href="css/lab8.css">
+</head>
+
+<body>
+
+<div class="site-grid">
+
+   <br></br>
+
+    <!-- Две микросетки -->
+    <div class="microgrids-row">
+
+        <!-- Микросетка №1 — Экспресс заказ -->
+        <div class="order-card">
+
+            <div class="order-card__header">Экспресс заказ</div>
+
+            <form class="order-card__body">
+
+                <label>
+                    Ваше имя
+                    <input type="text" required>
+                </label>
+
+                <label>
+                    Ваш номер телефона
+                    <input type="tel" required>
+                </label>
+
+                <div class="order-card__row">
+                    <label>
+                        Размер
+                        <select>
+                            <option>XS</option>
+                            <option>S</option>
+                            <option>M</option>
+                            <option>L</option>
+                            <option selected>XL</option>
+                            <option>XXL</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Доставка
+                        <select>
+                            <option>Курьер</option>
+                            <option selected>Самовывоз</option>
+                            <option>Почта</option>
+                        </select>
+                    </label>
+                </div>
+
+                <label class="order-card__full">
+                    Адрес доставки и дополнительная информация
+                     <textarea rows="3" required></textarea>
+                </label>
+
+               <button type="submit" class="order-card__btn">Заказать</button>
+
+            </form>
+        </div>
+
+        <!-- Микросетка №2 — Карточка дивана -->
+        <div class="sofa-card">
+
+            <img src="image/sofa.jpg" class="sofa-card__img" alt="Диван Mebelico Надежда 72 / 103095 (гостинка, серый)">
+
+            <div class="sofa-card__content">
+
+                <h3>Диван Mebelico Надежда 72 / 103085 (рогожка, серый)</h3>
+
+                <div class="sofa-card__price-row">
+                    <span class="sofa-card__price">671,00 р.</span>
+                    <span class="sofa-card__stars"> &#9733;&#9733;&#9733;&#9733;&#9734;</span> <!-- &#9733 символ звезды-->
+                </div>
+
+                <ul class="sofa-card__list">
+                    <li><b>Длина:</b> 201 см</li>
+                    <li><b>Глубина:</b> 80 см</li>
+                    <li><b>Высота:</b> 88 см</li>
+                    <li><b>Обивка:</b> ткань</li>
+                    <li><b>Наполнитель:</b> пенополиуретан (поролон) (25 кг/м³ + синтепон)</li>
+                    <li><b>Механизм трансформации:</b> книжка</li>
+                    <li><b>Ширина спального места:</b> 115 см</li>
+                    <li><b>Съёмный чехол:</b> нет</li>
+                </ul>
+
+                <div class="sofa-card__delivery">
+                    <span>Курьером — завтра</span>
+                    <span>Самовывоз — 15 марта</span>
+                </div>
+
+                <button class="sofa-card__btn">В корзину</button>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,816 @@
+/*Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+@font-face {
+    font-family: 'OpenSans_SemiCondensed_Italic';
+    src: url('font/OpenSans_SemiCondensed-Italic.ttf') format('truetype');
+    font-weight: 300;
+}
+
+/* Базовые стили */
+body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #152c44bb, #0f3763c5, #7e8ec4bb);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+}
+
+/* Заголовки */
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    color: #ffcb1ef3;
+    text-shadow: 0 0 3px #2e1e0bb6;
+}
+
+h2, h3, h4 {
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    text-shadow: 0 0 3px #2e1e0bc0;
+}
+h2 {
+    color: #ffffff;
+    text-shadow: 0 0 6px #6370b8;
+    font-size: 28px;
+    text-shadow: 0 0 3px #0b1b2ede;
+}
+
+/* Текст */
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    color: #f9fbff;
+    text-shadow: 0 0 3px #0b1b2e7e;
+  
+}
+    .text-white {
+    color: #ffffff;
+
+}
+
+.italic { font-style: italic; }
+.bold { font-weight: 700; }
+.underline { text-decoration: underline; }
+.strike { text-decoration: line-through; }
+
+/* Подписи и значения */
+.label {
+    color: #fcd52a;
+    font-weight: bold;
+}
+
+.value {
+    color: #ffffff;
+}
+
+/* Изображения */
+.img-shadow { box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); }
+.img-rounded { border-radius: 5px; }
+.char-photo {
+    margin-bottom: 18px; /* расстояние между фото и ссылкой */
+}
+
+.char-link {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+
+/* Таблица */
+.film-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.film-table th,
+.film-table td {
+    border: 1px solid #c6c9dd;
+    padding: 8px;
+    text-align: left;
+}
+
+.film-table th {
+    background-color: rgba(9, 19, 34, 0.3);
+    color: #ffffff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+}
+
+.film-table td {
+     font-family: 'Oswald', sans-serif;
+    color: #121220;
+     font-size: 17px;
+}
+
+.film-table tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Список песен */
+ol li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    color: #121220;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+img:hover {
+    transform: none;
+}
+
+#heroes img {
+    transition: transform 0.3s;
+}
+
+#heroes img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Ссылки */
+a {
+    color: #ffd000;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    font-size: 19px;
+    font-style: italic;
+    transition: 0.3s ease;
+    text-shadow: 0 0 3px #3a2a12b7;
+}
+
+a:hover {
+    color: #fff4d1;
+    text-decoration: underline;
+    text-shadow: 0 0 8px #ffffff;
+}
+
+/* Формы */
+form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px; /* форма не станет шире, но может стать уже */
+    backdrop-filter: blur(4px);
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+/* Подписи */
+label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #f6f6ff;
+    text-shadow: 0 0 4px #1a2a4d9d;
+}
+
+#forms label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+/* Поля ввода */
+input, select, textarea {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    padding: 8px 20px;
+    border: 1px solid #cdd9ff;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.18);
+    color: #021038;
+    backdrop-filter: blur(3px);
+}
+
+
+input:focus, select:focus, textarea:focus {
+    border-color: #fcd52a;
+    box-shadow: 0 0 8px #fcd52a;
+}
+
+/* Кнопки */
+button {
+    font-family: 'Oswald', sans-serif;
+    background-color: #245f99;
+    color: #ffffff;
+    border: 2px solid #f0c818;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0360b8;
+    box-shadow: 0 0 10px #fcd52a;
+    border-color: #ffffff;
+}
+
+
+/* РЕЗИНОВАЯ FLEX-ВЕРСТКА */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Контейнер — резиновый */
+.fixed-container {
+    width: 100%;
+    max-width: 1300px; /* ограничение, чтобы не растягивался слишком сильно */
+    margin: 0 auto;
+    background: rgba(255,255,255,0.05);
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: 2px solid rgba(255,255,255,0.25);
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Шапка */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap; /* чтобы красиво ломалось на телефонах */
+    gap: 15px;
+
+
+}
+
+
+
+/* Навигация */
+.main-nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* ссылки переносятся */
+}
+
+/* Контент */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Блоки */
+.block {
+    background: rgba(255,255,255,0.12);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    color: #fff;
+}
+
+/* Строки */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* ← главное для резиновой модели */
+}
+
+/* Половины */
+.half {
+    flex: 1 1 48%; /* резиновая ширина */
+    min-width: 300px; /* чтобы не ломалось слишком узко */
+}
+
+#trailer {
+    flex: 1;      /* занимает 1 часть */
+    min-width: 300px;
+}
+
+#soundtracks {
+    flex: 1.5;    /* занимает 1.5 части → шире */
+    min-width: 350px;
+}
+
+/* Саундтреки */
+#soundtracks ol {
+    columns: 2;
+    column-gap: 40px;
+}
+
+#soundtracks audio {
+    width: 100%;
+    display: block;
+}
+
+/* Подвал */
+.footer {
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/*  ТЕКСТ И ОФОРМЛЕНИЕ  */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Заголовки */
+.site-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-shadow: 0 0 3px #0b1b2e9c;
+}
+
+/* НАВИГАЦИЯ В ШАПКЕ  */
+.main-nav {
+    display: flex;
+    gap: 25px;              /* расстояние между ссылками */
+    align-items: center;    /* выравнивание по вертикали */
+    margin: 0;              /* убираем лишние отступы */
+    padding: 0;
+}
+
+.main-nav a {
+    color: #d3d8eb;         /* светло-серый, как у тебя было */
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-style: normal;
+    text-decoration: none;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
+    text-shadow: 0 0 3px #0b1b2ea6;
+}
+
+.main-nav a:hover {
+    color: #ffffff;         /* ярче при наведении */
+    border-bottom: 2px solid #fcd52a;
+    text-shadow: 0 0 6px #ffffff;
+}
+
+/* Блоки */
+.block {
+    background: rgba(255,255,255,0.12);
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    color: #fff;
+}
+
+/* Подвал */
+.footer {
+    background: rgba(255,255,255,0.15);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+
+/* АДАПТИВНАЯ МОДЕЛЬ*/
+
+/* 1200px: немного сжимаем колонки */
+@media (max-width: 1200px) {
+    #trailer {
+        flex: 1 1 45%;
+    }
+
+    #soundtracks {
+        flex: 1 1 50%;
+    }
+}
+
+/*  992px: две колонки превращаются в одну*/
+@media (max-width: 992px) {
+    .row {
+        flex-direction: column;
+    }
+
+    #trailer,
+    #soundtracks {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
+
+    #soundtracks ol {
+        columns: 1; /* одна колонка саундтреков */
+    }
+}
+
+/*768px: уменьшаем отступы и размеры */
+@media (max-width: 768px) {
+    .fixed-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    img,
+    video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/*480px: мобильная версия */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-nav {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .block {
+        padding: 15px;
+    }
+
+    #soundtracks ol {
+        columns: 1;
+    }
+}
+
+.logo-title {
+    display: flex;
+    align-items: center; /* выравнивает логотип и текст по вертикали */
+    gap: 17px;           /* расстояние между логотипом и текстом */
+}
+
+.site-title {
+    margin: 0;           /* убираем нижний отступ, который ломал выравнивание */
+}
+
+.logo {
+  height: 55px;
+  width: auto;
+  filter: drop-shadow(0 0 6px #fde165b4);
+  transition: transform 0.3s ease;
+  margin: 0;
+
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .logo {
+    height: 40px;
+  }
+  .logo-group {
+    gap: 10px;
+  }
+}
+
+/* АДАПТИВНЫЕ ФОРМЫ  */
+
+.forms-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-block {
+    flex: 1 1 calc(33.33% - 20px);
+    min-width: 250px;
+
+    background: rgba(255,255,255,0.12);
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+.form-block h3 {
+    margin-top: 0;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 0 0 4px #0b1b2e;
+}
+
+
+.form-block form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*  Планшеты (2 блока в ряд) */
+@media (max-width: 992px) {
+    .form-block {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        max-width: 100%;
+    }
+}
+
+/* Телефоны (1 блок в ряд)  */
+@media (max-width: 600px) {
+    .form-block {
+        flex: 1 1 100%;
+    }
+}
+
+/* ВНЕШНЯЯ МИКРОСЕТКА */
+.microgrids-row {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 25px;
+    align-items: start;
+    justify-content: center;
+}
+
+/*  ОБЩИЙ СТИЛЬ ДЛЯ ОБЕИХ КАРТОЧЕК */
+.order-card,
+.sofa-card {
+    background: rgba(255,255,255,0.12); /* как твои блоки */
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.25);
+    backdrop-filter: blur(4px);
+    padding: 18px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.4);
+    color: #fff; /* белый текст */
+    font-family: 'Oswald', sans-serif;
+}
+
+/* МИКРОСЕТКА №1 — Экспресс заказ */
+
+.order-card {
+    width: 360px;
+}
+
+.order-card__body label {
+    margin-top: 8px;
+}
+
+/* Две колонки — одинаковая ширина */
+.order-card__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+   
+}
+
+/* Подписи внутри полей */
+.order-card__row label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.order-card__header {
+    background: rgba(36, 95, 153, 0.8); /* синий как кнопки */
+    color: #fff;
+    padding: 12px 18px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* Поля одинаковой высоты */
+.order-card__row select {
+    padding: 4px 10px;
+    height: 34px; /* одинаковая высота */
+    font-size: 15px;
+}
+
+.order-card__body label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* расстояние между текстом и полем */
+    font-size: 16px;
+    color: #f6f6ff;
+    text-shadow: 0 0 4px #1a2a4d9d;
+}
+
+.order-card__body input,
+.order-card__body select,
+.order-card__body textarea {
+    width: 80%; 
+    margin-top: 5px;
+    border-radius: 6px;
+    border: 1px solid #cdd9ff;
+    background-color: rgba(255,255,255,0.18);
+    color: #021038;
+    backdrop-filter: blur(3px);
+    padding: 4px 10px; 
+    font-size: 14px;  
+}
+
+.order-card__btn {
+    margin-top: 4px;
+    padding: 9px 22px;
+    border-radius: 8px;
+    border: 2px solid #f0c818;
+    background: #245f99;
+    color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.order-card__btn:hover {
+    background: #0360b8;
+    box-shadow: 0 0 10px #fcd52a;
+    border-color: #ffffff;
+}
+
+/* Отступ между большим полем и кнопкой */
+.order-card__full textarea {
+    margin-bottom: 12px; /* можно 15–20px, если хочешь больше */
+}
+
+/* Цвет плейсхолдера только в микросетке */
+.order-card input::placeholder,
+.order-card textarea::placeholder,
+.order-card select::placeholder {
+    color: #ffffff; /* золотой как на сайте */
+    opacity: 0.8;   /* чтобы выглядел мягче */
+}
+
+/* МИКРОСЕТКА №2 — Карточка дивана */
+
+.sofa-card {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+    width: 780px;
+}
+
+.sofa-card__img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #000;
+}
+
+.sofa-card__content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 0 0 4px #0b1b2e;
+}
+
+.sofa-card__price {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffd000; /* неоново-жёлтый */
+}
+
+.sofa-card__price-row {
+    display: flex;
+    align-items: center;
+    gap: 18px; /* было 14px — можно 18–24px */
+}
+
+.sofa-card__stars {
+    color: #ffe57a;
+    font-size: 20px;
+}
+
+.sofa-card__list {
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0 12px;
+    font-size: 16px;
+    line-height: 1.45;
+    color: #e6e6ff;
+}
+
+.sofa-card__delivery {
+    display: flex;
+    flex-direction: column; /* переносим каждую строку вниз */
+    gap: 4px; /* расстояние между строками */
+    font-size: 16px;
+    color: #d7eaff;
+    margin-bottom: 12px;
+}
+
+.sofa-card__btn {
+    padding: 9px 20px;
+    border-radius: 8px;
+    border: 2px solid #f0c818;
+    background: #245f99;
+    color: #ffffff;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.sofa-card__btn:hover {
+    background: #0360b8;
+    box-shadow: 0 0 10px #fcd52a;
+}
+
+/* Адаптив */
+@media (max-width: 860px) {
+    .microgrids-row {
+        grid-template-columns: 1fr;
+    }
+    .sofa-card {
+        grid-template-columns: 1fr;
+        width: 100%;
+        max-width: 520px;
+    }
+}
+
+/* Бургер */
+#burger-toggle {
+    display: none;
+}
+
+.burger {
+    display: none;
+    font-size: 34px;
+    cursor: pointer;
+    color: #ffffff;
+    user-select: none;
+}
+
+/* Мобильное меню */
+.mobile-nav {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background: rgba(82, 108, 136, 0.95);
+    padding: 12px 16px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: 0.25s ease;
+    z-index: 200;
+    width: 200px;
+    
+}
+
+.mobile-nav a {
+    color: #ffffff;
+    padding: 8px 0;
+    font-size: 18px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.mobile-nav a:hover {
+    text-decoration: underline;
+}
+
+/* Показываем popup */
+#burger-toggle:checked ~ .mobile-nav {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* На телефонах скрываем обычное меню и показываем бургер */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}

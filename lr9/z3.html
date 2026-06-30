@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Диалоговые окна</title>
+    <script type="text/javascript">
+        function showDialogs() {
+            alert("Это окно alert c сообщением");
+
+            var name = prompt("Как вас зовут?");
+            
+            if (name != null) {
+                var confirmation = confirm("Ваше имя " + name + "?");
+                if (confirmation == true) {
+                    alert("Привет, " + name);
+                } else {
+                    alert("Вы отменили подтверждение");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="showDialogs()">Запустить диалоги</button>
+</body>
+</html>
